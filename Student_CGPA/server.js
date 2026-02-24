@@ -27,14 +27,29 @@ app.get("/students", (req, res) => {
 });
 
 
+// app.get("/students/topper", (req, res) => {
+//   if (students.length === 0) {
+//     return res.status(404).json({ message: "No students found" });
+//   }
+
+//   const topper = students.reduce((prev, current) =>
+//     current.cgpa > prev.cgpa ? current : prev
+//   );
+
+//   return res.status(200).json(topper);
+// });
+
 app.get("/students/topper", (req, res) => {
   if (students.length === 0) {
     return res.status(404).json({ message: "No students found" });
   }
 
-  const topper = students.reduce((prev, current) =>
-    current.cgpa > prev.cgpa ? current : prev
-  );
+  let topper = students[0]; 
+  for (let i = 1; i < students.length; i++) {
+    if (students[i].cgpa > topper.cgpa) {
+      topper = students[i];
+    }
+  }
 
   return res.status(200).json(topper);
 });
@@ -47,13 +62,18 @@ app.get("/students/average", (req, res) => {
     return res.status(404).json({ message: "No students found" });
   }
 
-  const total = students.reduce((sum, student) => sum + student.cgpa, 0);
+  let total = 0;
+  for (let i = 0; i < students.length; i++) {
+    total += students[i].cgpa;
+  }
+
   const average = (total / students.length).toFixed(2);
 
   return res.status(200).json({
     averageCGPA: Number(average)
   });
 });
+
 
 
 
