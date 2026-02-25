@@ -76,18 +76,18 @@ If product not found → 404 Not Found<br><br>
 
 
 🌍 Sample API URLs (After Deployment)<br><br>
-https://your-render-link.onrender.com/products<br>
-https://your-render-link.onrender.com/products/1<br>
-https://your-render-link.onrender.com/products/category/Electronics<br>
-https://your-render-link.onrender.com/products/stock/2<br>
-https://your-render-link.onrender.com/products/price/3<br>
+https://student-cgpa-2.onrender.com/products<br>
+https://student-cgpa-2.onrender.com/products/1<br>
+https://student-cgpa-2.onrender.com/products/category/Electronics<br>
+https://student-cgpa-2.onrender.com/products/2<br>
+https://student-cgpa-2.onrender.com/products/price/3<br>
 <br><br>
 
 
 ## 💻 Steps to Run Locally<br>
 
 1️⃣ Clone the repository<br>
-git clone https://github.com/your-username/ecommerce-product-api.git<br><br>
+git clone https://github.com/pateldrup/student_cgpa.git<br><br>
 
 2️⃣ Navigate into the project folder<br>
 cd ecommerce-product-api<br><br>
@@ -107,7 +107,7 @@ http://localhost:3000<br><br>
 This project is deployed on **Render**.<br><br>
 
 🔗 **Deployed Link**<br>
-https://your-app-name.onrender.com<br><br>
+https://student-cgpa-2.onrender.com<br><br>
 
 
 
