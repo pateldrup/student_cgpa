@@ -19,13 +19,12 @@ No database is used.
 
 
 Sample API URLs
-http://localhost:3000/states
+https://student-cgpa-6.onrender.com/states
 
-http://localhost:3000/states/5
+https://student-cgpa-6.onrender.com/states/5
 
-http://localhost:3000/states/highest-gdp
+https://student-cgpa-6.onrender.com/states/highest-gdp
 
-http://localhost:3000/states
 
 
 
@@ -36,7 +35,7 @@ Steps to Run Locally
 
 => 1. Clone the Repository
 
-https://github.com/YOUR_GITHUB_USERNAME/state-statistics-api.git
+   https://github.com/pateldrup/student_cgpa.git
 
 
 
@@ -46,4 +45,4 @@ http://localhost:3000
 
 Deployment Link
 
-=> https://YOUR-RENDER-LINK.onrender.com
+=> https://student-cgpa-6.onrender.com
